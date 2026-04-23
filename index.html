@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — Cong Rong</title>
-  <meta name="description" content="Privacy Policy for browser extensions published by Cong Rong.">
+  <title>Privacy Policy 鈥?Auto Email Extractor</title>
+  <meta name="description" content="Privacy Policy for the Auto Email Extractor Chrome extension.">
   <style>
     :root {
       color-scheme: light dark;
@@ -28,7 +28,7 @@
       margin: 0;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 1rem;
-      line-height: 1.65;
+      line-height: 1.6;
       color: var(--fg);
       background: var(--bg);
     }
@@ -58,101 +58,95 @@
       font-size: 0.9rem;
       color: var(--muted);
     }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 1rem 0; }
+    th, td { border: 1px solid var(--border); padding: 0.5rem 0.65rem; text-align: left; vertical-align: top; }
+    th { font-weight: 650; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <h1>Privacy Policy</h1>
-      <p class="meta">
-        <strong>Cong Rong</strong> (individual publisher)<br>
-        Last updated: <time datetime="2026-04-21">April 21, 2026</time>
-      </p>
+      <p class="meta"><strong>Auto Email Extractor</strong> 鈥?Last updated: <time datetime="2026-04-23">April 23, 2026</time></p>
+      <p class="meta">Replace the contact details in Section 10 before publishing.</p>
     </header>
 
     <main>
       <p>
-        This Privacy Policy describes how <strong>Cong Rong</strong> (“we”, “us”) handles information when you use our
-        <strong>browser extensions</strong> published on the Chrome Web Store or similar platforms (each, an “Extension”).
-        By installing or using an Extension, you agree to this policy.
-      </p>
-      <p class="note">
-        Each Extension’s store listing may include additional details (for example exact permissions). If anything conflicts,
-        the listing and this policy should be read together; product-specific pages may add extra context where available.
+        This policy describes how the <strong>Auto Email Extractor</strong> browser extension (鈥淓xtension鈥? handles information.
+        By using the Extension, you agree to this policy.
       </p>
 
-      <h2>1. Contact</h2>
+      <h2>1. Summary</h2>
       <p>
-        For privacy questions or requests:<br>
-        <a href="mailto:congrong512123@gmail.com">congrong512123@gmail.com</a>
+        The Extension can scan <strong>visible web page content</strong> for email addresses <strong>only when you enable monitoring</strong>
+        in the side panel. Detected addresses are stored <strong>locally</strong> in a single list on your device. The distributed package
+        described here does not send your collected list to the publisher鈥檚 servers.
       </p>
 
-      <h2>2. What we process</h2>
-      <p>Depending on the Extension, processing may include:</p>
+      <h2>2. Data stored locally</h2>
       <ul>
-        <li>
-          <strong>Local browser data</strong> — settings, on/off toggles, and content you choose to process inside Chrome
-          (for example lists derived from pages you browse), stored under your browser profile using Chrome storage APIs.
-        </li>
-        <li>
-          <strong>Page content you already see</strong> — some Extensions read <strong>visible</strong> text or links on websites
-          you visit to provide their core feature, only while the feature is enabled as described in the listing.
-        </li>
+        <li><strong>Monitoring on/off</strong> preference.</li>
+        <li><strong>Email addresses</strong> you chose to collect while monitoring was on, merged into one global list.</li>
       </ul>
-      <p>
-        Our Extensions are built to work <strong>without a publisher-controlled backend</strong> unless a specific listing
-        states otherwise. In the default configuration, we do not operate servers that receive your Extension data.
-      </p>
+      <p>This data is kept in Chrome鈥檚 local storage under your profile until you clear it, clear the list in the Extension, or uninstall.</p>
 
-      <h2>3. Purposes</h2>
+      <h2>3. How the Extension uses permissions</h2>
       <ul>
-        <li>To provide Extension functionality you request (for example showing or exporting information in a side panel).</li>
-        <li>To keep local preferences and state so the Extension works reliably on your device.</li>
+        <li><strong>Side panel:</strong> toggle, list, copy, dedupe, and clear; re-reads the latest preference and list from local storage when you show the side panel again.</li>
+        <li><strong>Storage:</strong> persist the monitoring flag and the global email list.</li>
+        <li><strong>Content scripts (http/https):</strong> when monitoring is enabled, read visible text and links on pages you visit (main frame, excluding the Chrome Web Store) to find email-like strings.</li>
       </ul>
+      <p>The Extension does not use the <code>tabs</code> permission; UI updates use local storage, runtime messages, and page visibility in the side panel.</p>
 
-      <h2>4. Sharing and sale of data</h2>
+      <h2>4. Remote servers</h2>
       <p>
-        We do <strong>not</strong> sell your personal information. We do not share Extension data with third parties for their
-        own marketing. We may disclose information if required by law or to protect rights and safety.
+        The core feature works without a publisher-controlled backend. If a future version adds cloud sync or accounts, this page will be updated and the Extension listing will describe what is sent and why.
       </p>
 
-      <h2>5. Third-party services</h2>
+      <h2>5. Lawful use</h2>
       <p>
-        The Extension may interact with third-party websites you choose to visit; those sites have their own policies.
-        If a future version integrates a third-party SDK (payments, analytics, etc.), we will update this policy and the store listing.
+        Email addresses may be personal data. You must collect and use them only where permitted by law and by each website鈥檚 terms.
+        No spam, harassment, or unauthorized harvesting.
       </p>
 
-      <h2>6. Retention and deletion</h2>
+      <h2>6. Children</h2>
+      <p>The Extension is not directed to children under 13 (or the minimum age in your jurisdiction).</p>
+
+      <h2>7. Changes</h2>
+      <p>We may update this policy; the 鈥淟ast updated鈥?date will change. Continued use means you accept the updated policy.</p>
+
+      <h2>8. Contact</h2>
       <p>
-        Data stored locally remains until you clear it in the Extension (where available), clear Extension data in Chrome settings,
-        or uninstall the Extension. Uninstalling normally removes Extension storage from that profile under standard Chrome behavior.
+        Questions: <a href="mailto:congrong512123@gmail.com">congrong512123@gmail.com</a>
       </p>
 
-      <h2>7. Children</h2>
-      <p>
-        Extensions are not directed to children under 13 (or the minimum age in your jurisdiction). We do not knowingly collect
-        personal information from children.
-      </p>
-
-      <h2>8. International users</h2>
-      <p>
-        If you are in the EEA, UK, or other regions with privacy laws, you may have rights to access, correct, delete, or object
-        to certain processing. Contact us at the email above. You may also lodge a complaint with your local supervisory authority.
-      </p>
-
-      <h2>9. Changes</h2>
-      <p>
-        We may update this policy from time to time. The “Last updated” date will change when we do. Continued use after changes
-        means you accept the updated policy where permitted by law.
-      </p>
+      <h2>Appendix 鈥?Chrome Web Store disclosure (reference)</h2>
+      <table>
+        <thead>
+          <tr><th>Topic</th><th>Typical answer</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Data collected</td>
+            <td>Email strings found in visible page content while monitoring is on; on/off flag.</td>
+          </tr>
+          <tr>
+            <td>Purpose</td>
+            <td>App functionality 鈥?display and manage the list you chose to build.</td>
+          </tr>
+          <tr>
+            <td>Sale of data</td>
+            <td>Not sold (confirm matches your practice).</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
 
     <footer>
-      <p>© <span id="y"></span> Cong Rong. All rights reserved.</p>
+      <p>漏 <span id="y"></span> Auto Email Extractor.</p>
     </footer>
   </div>
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
